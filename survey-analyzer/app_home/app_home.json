@@ -1,0 +1,97 @@
+{
+    "token": "token_placeholder",
+    "user_id": "user_id_placeholder",
+    "view": {
+        "type": "home",
+        "blocks": [
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "Welcome to *Survey Analyzer*! This is an app that will read your survey results for you and group them into distinct topics based on the contents of responses. The analysis will make it easy to visualize broad themes discussed by the respondents, as well as see the most representative phrases or sentences of each topic. This tool can be accessed entirely through Slack without needing any advanced technical skills. Simply share your Excel file with Survey Analyzer and confirm that it knows the correct file to analyze. This guide provides instructions for how to properly format your Excel file and handle any errors that may appear.\n\n<https://topic-modeling-deployment.s3.amazonaws.com/app_home/Survey+Analyzer+Guide.pdf| This guide can be downloaded as a PDF here.>"
+                }
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*Formatting the Survey Response File* \n\n*File Type*  \nSurvey Analyzer only accepts Excel files. If your results are in a Google Sheets document or CSV file, it must first be saved as an Excel file with a .xlsx file extension. \n\n- To download a Google Sheets document, click _File > Download > Microsoft Excel (.xlsx)_  \n\n- To convert a CSV file, click _File > Save As_. Under _Save as_ type, select _Excel Workbook (*.xlsx)_  \n\n"
+                }
+            },
+            {
+                "type": "image",
+                "title": {
+                    "type": "plain_text",
+                    "text": "How to save a Google Sheets document (left) or CSV file (right) as an Excel Workbook"
+                },
+                "block_id": "file_type",
+                "image_url": "https://topic-modeling-deployment.s3.amazonaws.com/app_home/file_type.png",
+                "alt_text": "How to save a Google Sheets document (left) or CSV file (right) as an Excel Workbook"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*File Formatting* \n\nIt is crucial for you to ensure that your results file is formatted properly for Survey Analyzer to run properly. If the uploaded workbook does not adhere to one of two styles, the model will respond with an error and be unable to analyze your results. To ensure the experience is as seamless as possible, please check that your results are formatted accordingly before sharing the file with Survey Analyzer."
+                }
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*Style 1: All questions on the same sheet*  \n\nThe first style accepts an Excel workbook that meets the following criteria: \n•\tThe workbook contains *only one worksheet* \n•\tThe survey questions in row 1, followed by the responses in the rows beneath it \n•\tEach question is separated by column \n\t\to\tQuestion 1 and its responses are located in _Column A_ \n\t\to\tQuestion 2 and its responses are located in _Column B_, etc. \n\t\to\tThere are no empty columns between questions \n•\tQuestion headers can include text such as \n\t\to\t_Question 1_ \n\t\to\t_Whatever question 1 was asking?_ \n•\tThe questions will be referenced sequentially by the order they appear in the columns \n\t\to\tIn the example below, the questions would be labeled _Q1, Q2,_ and _Q3_ \n\t\to\tResult files for each question will be denoted with `__Q1__`, … in the file names \n•\tThe worksheet does not have any merged cells \n•\tEmpty cells are allowed for the responses. There is no need to condense the cells"
+                }
+            },
+            {
+                "type": "image",
+                "title": {
+                    "type": "plain_text",
+                    "text": "Style 1: All questions on the same sheet"
+                },
+                "block_id": "format_style_1",
+                "image_url": "https://topic-modeling-deployment.s3.amazonaws.com/app_home/format_style_1.png",
+                "alt_text": "Style 1: All questions on the same sheet"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*Style 2: Each question on a different sheet* \n\nThe second style accepts an Excel workbook that contains *at least one worksheet*, where each worksheet meets the following criteria: \n•\tThe survey question is in Cell _A1_ \n•\tThe survey responses are in _Column A_ below the question header \n•\tQuestion headers can include text such as \n\t\to\t_Question 1_ \n\t\to\t_Whatever question 1 was asking?_ \n•\tThe sheet name will be how the question is referenced \n\t\to\tIn the example below, _Q6_ is the sheet name \n\t\to\tResult files for this question will be denoted with `__Q6__` in the file name \n•\tThe worksheet does not have any merged cells \n•\tEmpty cells are allowed for the responses. There is no need to condense the cells"
+                }
+            },
+            {
+                "type": "image",
+                "title": {
+                    "type": "plain_text",
+                    "text": "Style 2: Each question on a different sheet"
+                },
+                "block_id": "format_style_2",
+                "image_url": "https://topic-modeling-deployment.s3.amazonaws.com/app_home/format_style_2.png",
+                "alt_text": "Style 2: Each question on a different sheet"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*How to Start the Analysis* \n\nSharing your Excel file with Survey Analyzer is no different than sharing a file with any other user. When you first send a message, Survey Analyzer will prompt you to say the key phrase: \n\n_Analyze my file_ \n\nSending this message will trigger Survey Analyzer to begin the process with you. Survey Analyzer will gather all Excel files you have shared with it and ask you which one you would like to have analyzed, beginning with the most recent file. \n\nRespond with _yes_ or _no_ to confirm the correct workbook is sent. When you say yes, Survey Analyzer will send the Excel file to AWS to begin processing. You will receive a confirmation message if your file has been accepted. If there is an error with the uploaded file, make any necessary changes and begin the process over again.\n\nThe *REF_ID* is the reference ID for your file. It is only used in the background for  Survey Analyzer to reference your file during processing but can be helpful for identifying your ticket if assistance is needed. This ID is associated with the file you uploaded to Slack; running multiple analyses on the same file will all generate the same ID, while running analyses on separate uploads will generate different IDs."
+                }
+            },
+            {
+                "type": "image",
+                "title": {
+                    "type": "plain_text",
+                    "text": "Starting the analysis in Slack"
+                },
+                "block_id": "starting_analysis",
+                "image_url": "https://topic-modeling-deployment.s3.amazonaws.com/app_home/starting_analysis.png",
+                "alt_text": "Starting the anlysis in Slack"
+            }
+        ]
+    }
+}
