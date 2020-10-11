@@ -1,6 +1,29 @@
 ---
+title: Survey Analyzer
 description: Apply topic modeling techniques to surveys in minutes
 ---
+
+### TL;DR
+Commpany: ViacomCBS, Advanced Advertising 
+June 2020 – August 2020
+
+An important field of data science is sentiment analysis, which uses natural language processing to extract certain emotions
+of feelings from text. The main goal of this project is to build and train a model that can detect the sentiment of a tweet. 
+For simplicity, this model limit its scope to label all tweets as either <em>negative</em>, <em>neutral</em>, or <em>positive</em>.
+
+ * Applied NLP and Latent Dirichlet Allocation techniques in Python to significantly improve the interpretability and efficiency of survey results
+ * Deployed the model pipeline using AWS to work in tandem with Slack’s interface. Users can utilize a drag-and-drop interface as well as a trained chatbot to access this model without requiring advanced technical skills
+ * Link to the [project presentation](presentation.html).
+
+Skills learned/used:
+ * Natural Language Processing
+ * Latent Dirichlet Allocation
+ * Machine Learning for Language Toolkit (MALLET)
+ * AWS (Lambda, Athena, Step Functions, Lex, S3, EC2, EFS)
+ * Slack API
+
+
+
 
 # Survey Analyzer
 

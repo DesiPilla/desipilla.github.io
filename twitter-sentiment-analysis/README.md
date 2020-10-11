@@ -15,7 +15,7 @@ For simplicity, this model limit its scope to label all tweets as either <em>neg
 
 Skills learned/used:
  * Natural Language Processing
- * Bog-of-words analysis
+ * Bag-of-words analysis
  * SVM, Random Forests, Naïve Bayes, Gradient Descent, KNN, Perceptron, and Logistic Regression
 
 
