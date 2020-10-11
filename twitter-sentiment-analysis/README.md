@@ -1,4 +1,4 @@
-# TL;DR
+## TL;DR
 Twitter Sentiment Analysis Model
 Course: Mathematical Techniques for Data Science (MATH 637) 
 March 2020 – present
