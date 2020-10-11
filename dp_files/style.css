@@ -5016,7 +5016,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: url("img/diagmonds.png"), #000000;
+    background: url("img/rugger.jpg"), #335e89;
 }
 
 header .container {
@@ -5115,7 +5115,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: url("img/diagmonds.png"), #000000;
+    background: url("img/rugged.jpg"), #335e89;
 }
 
 @media(max-width:767px) {
@@ -5145,7 +5145,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: url("img/diagmonds.png"), #000000;
+    background: url("img/rugged.jpg"), #000000;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -5392,7 +5392,7 @@ footer .footer-below {
 #desktopNav	{
   position: absolute;
   height: 100%;
-  background: url("/img/diagmonds.png"), #000000;
+  background: url("/img/rugged.jpg"), #000000;
   top: 0;
   left: 0;
   z-index: 9999;
