@@ -1,0 +1,3 @@
+theme: jekyll-theme-cayman
+title: Comment Sentiment Analysis
+description: Extracting emotion and sentiment labels from comments on Facebook, Instagram, Twitter, etc.
