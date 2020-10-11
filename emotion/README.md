@@ -2,13 +2,14 @@
 Commpany: ViacomCBS, Advanced Advertising 
 August 2020 – September 2020
 
-An important field of data science is sentiment analysis, which uses natural language processing to extract certain emotions
-of feelings from text. The main goal of this project is to build and train a model that can detect the sentiment of a tweet. 
-For simplicity, this model limit its scope to label all tweets as either <em>negative</em>, <em>neutral</em>, or <em>positive</em>.
+ * Identified missing dimensions in the original problem which redefined the project scope.
+ * Combined TensorFlow sentence encoder with Naïve Bayes estimator to extract emotion (75.0% accuracy) and sentiment (79.7% accuracy) labels from Facebook and Instagram comments
 
- * Applied natural language processing techniques using NLTK to preprocess tweets
- * Independently identified and compared several machine learning methods to solve the problem (SVM, Random Forests, Naïve Bayes, Gradient Descent, KNN, Perceptron, and Logistic Regression)
- * Achieved 77.94% model accuracy (classification of *negative*, *neutral*, or *positive*) by performing cross-validation to achieve the optimal estimator 
+Skills learned/used:
+* Natural Language Processing
+* AWS (Lambda, Athena, SQS, S3, EC2, EFS)
+* TensorFlow Hub
+* Naïve Bayes
 
 
 
