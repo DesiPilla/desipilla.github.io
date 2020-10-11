@@ -1,8 +1,3 @@
----
-title: Twitter Sentiment Analysis
-description: Labeling tweets as positive, neutral, or negative
----
-
 ### TL;DR
 Twitter Sentiment Analysis Model
 Course: Mathematical Techniques for Data Science (MATH 637) 

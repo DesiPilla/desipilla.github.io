@@ -1,9 +1,5 @@
----
-title: Survey Analyzer
-description: Apply topic modeling techniques to surveys in minutes
----
-
 ### TL;DR
+Survey Analyzer
 Commpany: ViacomCBS, Advanced Advertising 
 June 2020 – August 2020
 
