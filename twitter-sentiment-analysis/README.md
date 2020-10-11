@@ -89,7 +89,7 @@ messages_tfidf = tfidf_transformer.transform(bow_matrix)
 The following figure gives a visual representation of how these modules manipulate the data to prepare it for a classical estimator.
 
 
-![explanation of tfidf vectorizer](figures/tfidfvectorizer_explain.png)
+![explanation of tfidf vectorizer](img/tfidfvectorizer_explain.png)
 
 **Figure 1:** The above figure shows how `CountVectorizer` and `TfidfTransformer` convert a collection of words into a bag-of-words tf-idf matrix.
 
@@ -190,12 +190,12 @@ Before exploring the best model further, let us unpack the performance of each e
 The Naive Bayes estimator produced the third best results, with a cross validation accuracy of 74.14%. Unlike the SVC, this model computed roughly 20% quicker than the SGD model. The fastest estimator, the Perceptron, was also the worst performer. However, it is still noteworthy that the Perceptron was able to classify tweets with 70% accuracy, which is a decent score. The Random Forest model was the most computationally expensive model, yet fell in the middle of the pack in terms of accuracy.
 
 
-![model performance for each estimator (by accuracy)](figures/estimator_performance.png)
+![model performance for each estimator (by accuracy)](img/estimator_performance.png)
 
 **Figure 2:** This bar chart displays the cross validation accuracy of the *best* model for each estimator. Note that a different number of models were tested for each estimator, depending on the number of hyperparameters that were tuned. The above plot only displays the best accuracy, not the average accuracy.
 
 
-![model performance on each estimator (by computational time)](figures/estimator_time.png)
+![model performance on each estimator (by computational time)](img/estimator_time.png)
 
 **Figure 3:** This bar chart displays the computing time for the *best* model of each estimator, as defined in Figure 2. 
 
@@ -214,7 +214,7 @@ Overall, the model had very strong results. During cross-validation, the trainin
 We can examine the accuracy of the model more closely by plotting the receiver operating characteristic (ROC) curve for each sentiment. The ROC curve of a model illustrates the relationship between its threshold for classification and its classification performance. This is done by plotting the true positive rate against the false negative rate at different thresholds. Curves closer to the top-left corner of the plane signal that a model can correctly classify most of the tweets of a certain sentiment, without falsely classifying tweets of other sentiments as such. The area under the curve (AUC) is a numerical quantity used to measure ROC curves. As visible in the Figure 4, the ROC curves of each sentiment hug the top-left corner quite nicely. While not all curves follow the exact same path, their AUC values are quite similar; this implies the model is good at predicting each sentiment and is not over-trained to recognize one of them and under-trained in recognizing another.
 
 
-![roc curve of each sentiment](figures/roc.png)
+![roc curve of each sentiment](img/roc.png)
 
 **Figure 4:** The ROC curve plots the true positive rate against the false negative rate at various thresholds for each sentiment. The dashed black line is the no-discrimination line, which can be interpreted as a classifying tweets at random using no methodology.
 
@@ -234,12 +234,12 @@ The first and second tweets are objective. The model is able to predict with ext
 
 Moving forward, we can now measure this model’s ability to predict aggregate sentiment scores on large collections of tweets. We took 1,000 bootstrapped samples from our test set and computed the aggregate sentiment score of each. The aggregate score is simply the average of each sentiment score in the collection of tweets, normalized to a -1 to 1 scale. A score of -1 means all tweets are negative; a score of 0 means either all tweets are neutral or there are an equal number of negative and positive tweets; a score of 1 means that all tweets are positive. As each tweet is given a score of 0, 2, or 4, the aggregate score is computed using the following formula:
 
-![equation](figures/eqn.png)
+![equation](img/eqn.png)
 
 where T is a collection of tweets and S is a function that returns the sentiment score of an individual tweet. These aggregate scores can be compared to the known aggregate scores of each bootstrapped sample, as the individual tweets have known sentiments. Because these bootstrapped samples come from our test set, this can provide a reliable measure of the uncertainty in the model’s aggregate score predictions. These tweets were never seen by the model during training and tuning, and thus the model has no bias towards them. As seen in Figure 5, the aggregate score residuals were well behaved, with a roughly normal distribution centered at 0.004, which is close enough to zero for our purposes. The standard deviation was 0.0247, which means that the model’s aggregate sentiment scores can be accepted with 95% confidence at ± 0.05 the predicted value. Note that the scale for aggregate scores is -1 to 1, meaning that this interval is equivalent to ± 2.5%.
 
 
-![sentiment score prediction error](figures/agg_error_hist.png)
+![sentiment score prediction error](img/agg_error_hist.png)
 
 **Figure 5:** This histogram shows the distribution of the residuals for the model’s aggregate sentiment score of 1,000 bootstrapped *test* samples. Note that the trained model has never seen these tweets before.
 
@@ -247,7 +247,7 @@ where T is a collection of tweets and S is a function that returns the sentiment
 Lastly, we built in the ability to generate word clouds of any text into this model. Users can either create a word cloud of the entire sample, or of only one sentiment. As sentiments are not known ahead of time for most tweet collections, our model will first predict the sentiment of each tweet, and then plot the most important words; here, *important* means words with the largerd tf-idf weight. By observing the word clouds, one can see which are the most important words being used to describe a topic in a specific context. For example, Figure 6 displays the word clouds generated from the training data.
 
 
-![word clouds for training data](figures/wc_train_all3.png)
+![word clouds for training data](img/wc_train_all3.png)
 
 **Figure 6:** The above word clouds show the most important words or phrases for classifying each sentiment (*negative*, *neutral*, *positive*, from left to right).
 
@@ -276,7 +276,7 @@ By examining the word cloud (Figure 7) for the entire collection (not just a sin
 These terms can provide insight into what the public is focusing on when they think of the coronavirus.
 
 
-![coronavirus word cloud](figures/wc_corona.png)
+![coronavirus word cloud](img/wc_corona.png)
 
 **Figure 7:** This word cloud shows the most important terms related to the entire “coronavirus” collection. They are not specific to one sentiment.
 
