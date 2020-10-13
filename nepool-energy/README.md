@@ -15,6 +15,7 @@ Energy consumption forecasting is vitally important for both energy companies an
 Skills learned/used:
  * Facebook Prophet (additive regression)
  * Data scraping / cleaning
+ * Data visualization
  * PCA
 
 
