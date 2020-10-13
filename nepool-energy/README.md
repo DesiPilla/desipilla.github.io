@@ -7,7 +7,7 @@ March 2020 – May 2020
 
 Energy consumption forecasting is vitally important for both energy companies and government agencies to properly hedge their assets and to ensure sustainability and access to the resource. Using historical weather data for the city of Boston (2000 to 2019), I performed a statistical analysis of energy forecasting for the New England region. I developed a model using Facebook's Prophet package to forecast load upto 90 days in advance.
 
- * Designed an additive regression model using Facebook�s Prophet to forecast future energy demand in the New England region
+ * Designed an additive regression model using Facebook's Prophet to forecast future energy demand in the New England region
  * Obtained a mean absolute percent error (MAPE) of 7.45% on hourly predictions and 2.35% on 3-month cumulative load consumption
  * Link to the [full project](https://github.com/DesiPilla/forecasting-new-england-energy).
  * Link to the [project presentation](presentation/).
