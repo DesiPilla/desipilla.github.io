@@ -1,6 +1,8 @@
 ### TL;DR
 Twitter Sentiment Analysis Model
+
 Course: Mathematical Techniques for Data Science (MATH 637) 
+
 March 2020 – present
 
 An important field of data science is sentiment analysis, which uses natural language processing to extract certain emotions

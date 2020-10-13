@@ -1,6 +1,8 @@
 ### TL;DR
 Survey Analyzer
+
 Commpany: ViacomCBS, Advanced Advertising 
+
 June 2020 – August 2020
 
 An important field of data science is sentiment analysis, which uses natural language processing to extract certain emotions
