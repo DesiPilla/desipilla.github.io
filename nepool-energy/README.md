@@ -1,3 +1,10 @@
+*[HTML]: Hyper Text Markup Language
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Forecasting New England Energy Consumption</title>
+<!-- Icons -->
+<link rel="favicon-144-precomposed" href="../img/profile.jpg">
+<link rel="shortcut icon" href="../img/profile.jpg">
+
 ### TL;DR
 Forecasting New England Energy Consumption
 
