@@ -11,7 +11,7 @@ For simplicity, this model limit its scope to label all tweets as either <em>neg
  * Independently identified and compared several machine learning methods to solve the problem
  * Achieved 77.94% model accuracy (classification of *negative*, *neutral*, or *positive*) by performing cross-validation to achieve the optimal estimator 
  * Link to the [full project](https://github.com/DesiPilla/Twitter-Sentiment-Analysis).
- * Link to the [project presentation](presentation/index.html).
+ * Link to the [project presentation](presentation/).
 
 Skills learned/used:
  * Natural Language Processing

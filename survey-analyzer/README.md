@@ -9,7 +9,7 @@ For simplicity, this model limit its scope to label all tweets as either <em>neg
 
  * Applied NLP and Latent Dirichlet Allocation techniques in Python to significantly improve the interpretability and efficiency of survey results
  * Deployed the model pipeline using AWS to work in tandem with Slack’s interface. Users can utilize a drag-and-drop interface as well as a trained chatbot to access this model without requiring advanced technical skills
- * Link to the [project presentation](presentation.html).
+ * Link to the [project presentation](presentation/).
 
 Skills learned/used:
  * Natural Language Processing
