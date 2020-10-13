@@ -11,6 +11,7 @@ This application displays unique stats about ESPN fantasy football leagues. User
 
 Skills learned/used:
  * API usage for data scraping
+ * Data cleaning
  * GUI development (Tkinter)
 
 

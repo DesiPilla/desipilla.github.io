@@ -13,9 +13,11 @@ Energy consumption forecasting is vitally important for both energy companies an
  * Link to the [project presentation](presentation/).
 
 Skills learned/used:
- * Natural Language Processing
- * Bag-of-words analysis
- * SVM, Random Forests, Naïve Bayes, Gradient Descent, KNN, Perceptron, and Logistic Regression
+ * Facebook Prophet (additive regression)
+ * Data scraping / cleaning
+ * PCA
+
+
 
 
 
