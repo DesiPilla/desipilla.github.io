@@ -1,3 +1,10 @@
+---
+title: ESPN Fantasy Football API
+description: This application displays unique stats about ESPN fantasy football leagues. Users can login to their league and access weekly awards, power rankings, luck scores, and playoff predictions. These stats can also be accessed using Python modules for further development.
+permalink: /espn-api-v3/
+---
+
+
 ### TL;DR
 ESPN Fantasy Football API
 
