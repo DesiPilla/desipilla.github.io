@@ -1,5 +1,6 @@
 ---
 title: Relationship Between Demographics, Voter ID Laws, and Voter Turnout
+description: "Course: Machine Learning for Public Policy (UAPP 667)"
 permalink: /voter-turnout/
 ---
 
