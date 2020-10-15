@@ -1,3 +1,9 @@
+---
+layout: page
+title: Relationship Between Demographics, Voter ID Laws, and Voter Turnout
+permalink: /voter-turnout/
+---
+
 ### TL;DR
 Relationship Between Demographics, Voter ID Laws, and Voter Turnout
 
